@@ -1,0 +1,19 @@
+package com.xworkz.company;
+
+import com.xworkz.company.dao.CompanyDAO;
+
+import com.xworkz.company.dao.CompanyImpl;
+import com.xworkz.company.entity.CompanyEntity;
+
+public class CompanyScanner {
+
+	//	CompanyEntity companyEntity1 = new CompanyEntity(1, "google", "mnc", "software", "www.google.com");
+	//	CompanyEntity companyEntity2 = new CompanyEntity(2, "amazone", "mnc", "software", "www.amazone.com");
+		CompanyEntity companyEntity3 = new CompanyEntity(2, "microsoft", "mnc", "software", "www.microsoft.com");
+		CompanyEntity companyEntity4 = new CompanyEntity(2, "flipkart", "e-commerece", "service", "www.flipkart.com");
+
+		CompanyDAO company= new CompanyImpl();
+	
+		
+
+}

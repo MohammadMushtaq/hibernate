@@ -1,0 +1,18 @@
+package com.xworkz.country;
+
+import com.xworkz.country.dao.CountryDAO;
+import com.xworkz.country.dao.CountryImpl;
+import com.xworkz.country.entity.CountryEntity;
+
+public class CountryScanner {
+
+	public static void main(String[] args) {
+
+		CountryEntity countryEntity = new CountryEntity(1, "india", "asia", "130crore");
+		CountryDAO countryDAO = new CountryImpl();
+		//countryDAO.create(countryEntity);
+		countryDAO.getByName("india");
+
+	}
+
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.hibernate.Session"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="org.hibernate.annotations.Entity"/>
+    <fullyQualifiedTypeName name="org.w3c.dom.Entity"/>
+    <fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
+    <fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
+    <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
+    <fullyQualifiedTypeName name="com.xworkz.city.entity.CityEntity"/>
+    <fullyQualifiedTypeName name="com.xworkz.country.entity.CountryEntity"/>
+    <fullyQualifiedTypeName name="com.xworkz.company.dao.CompanyImpl"/>
+    <fullyQualifiedTypeName name="com.xworkz.company.entity.CompanyEntity"/>
+    <fullyQualifiedTypeName name="com.xworkz.patient.entity.PatientEntity"/>
+    <fullyQualifiedTypeName name="com.xworkz.state.dao.StateDAO"/>
+    <fullyQualifiedTypeName name="com.xworkz.state.entity.StateEntity"/>
+    <fullyQualifiedTypeName name="com.xworkz.company.dao.CompanyDAO"/>
+</qualifiedTypeNameHistroy>

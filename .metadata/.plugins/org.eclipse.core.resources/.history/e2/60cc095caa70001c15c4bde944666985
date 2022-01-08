@@ -1,0 +1,30 @@
+package com.xworkz.patient.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.xworkz.patient.entity.PatientEntity;
+
+public class Patientimpl implements PatientDAO{
+
+	@Override
+	public void create(PatientEntity patientEntity) {
+		System.out.println(patientEntity);
+		Configuration configuration = new Configuration();
+		configuration.configure();
+		configuration.addAnnotatedClass(PatientEntity.class);
+		SessionFactory sessionFactory = configuration.buildSessionFactory();
+	
+		Session session = sessionFactory.openSession();
+		Transaction tr = session.beginTransaction();
+		session.save(patientEntity);
+		tr.commit();
+		session.close();
+		sessionFactory.close();
+		
+		
+	}
+
+}

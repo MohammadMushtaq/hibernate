@@ -1,0 +1,11 @@
+package com.xworkz.patient.entity;
+
+public class PatientDAO {
+	private int id;
+	private String name;
+	private String birthPlace;
+	private boolean corona;
+	private float age;
+	private int busNo;
+
+}

@@ -1,0 +1,21 @@
+package com.xworkz.company.dao;
+
+import com.xworkz.company.entity.CompanyEntity;
+
+public interface CompanyDAO {
+
+	public void save(CompanyEntity companyEntity);
+	
+	default CompanyEntity getById(int id) {
+		
+		
+		return null;
+		
+	}
+default void updateById(CompanyEntity companyEntity,int id) {
+		
+	}
+     default void deleteById(int id) {
+		
+	}
+}

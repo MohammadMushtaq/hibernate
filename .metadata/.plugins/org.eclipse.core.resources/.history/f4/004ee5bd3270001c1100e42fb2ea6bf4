@@ -1,0 +1,16 @@
+package com.xworkz.state.entity;
+
+public class StateEntity {
+	
+	private int id;
+	private String name;
+	private String noOFDist;
+	private String sCapital;
+	
+	public StateEntity() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+}

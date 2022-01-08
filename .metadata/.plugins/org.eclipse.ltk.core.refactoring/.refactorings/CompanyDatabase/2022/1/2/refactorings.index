@@ -1,0 +1,7 @@
+1641617699410	Rename field 'continent'
+1641617720081	Rename local variable 'continent'
+1641617775741	Rename method 'getContinent'
+1641617804642	Rename method 'setContinent'
+1641617863755	Rename field 'population'
+1641617945115	Encapsulate field 'type'
+1641666515869	Delete element

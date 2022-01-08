@@ -1,0 +1,50 @@
+package com.xworkz.patient.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.xworkz.patient.entity.PatientEntity;
+
+public class Patientimpl implements PatientDAO{
+
+	@Override
+	public void create(PatientEntity patientEntity) {
+		System.out.println(patientEntity);
+		Configuration configuration = new Configuration();
+		configuration.configure();
+		configuration.addAnnotatedClass(PatientEntity.class);
+		SessionFactory sessionFactory = configuration.buildSessionFactory();
+	
+		Session session = sessionFactory.openSession();
+		Transaction tr = session.beginTransaction();
+		session.save(patientEntity);
+		tr.commit();
+		session.close();
+		sessionFactory.close();
+		
+		
+	}
+	@Override
+	public PatientEntity getById(int id) {
+		PatientEntity patientEntity = null;
+		System.out.println("invked getbyid");
+		System.out.println("id passed as argument " + id);
+
+		SessionFactory sessionfactory = new Configuration().configure().addAnnotatedClass(PatientEntity.class)
+				.buildSessionFactory();
+		if (sessionfactory != null) {
+			Session session = sessionfactory.openSession();
+			patientEntity = session.get(PatientEntity.class, id);
+			if (patientEntity != null) {
+				System.out.println("passing id is found");
+			} else {
+				System.out.println("id not found");
+			}
+		}
+		return patientEntity;
+	}
+	}
+
+}

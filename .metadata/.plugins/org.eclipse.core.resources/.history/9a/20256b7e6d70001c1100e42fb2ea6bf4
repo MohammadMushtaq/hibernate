@@ -1,0 +1,16 @@
+package com.xworkz.patient;
+
+import com.xworkz.patient.dao.PatientDAO;
+import com.xworkz.patient.dao.Patientimpl;
+import com.xworkz.patient.entity.PatientEntity;
+
+public class patientScanner {
+
+	public static void main(String[] args) {
+		PatientEntity patientEntity = new PatientEntity(1,"naveen","bangalore",false,25,145);
+		
+		PatientDAO patientDAO = new Patientimpl();
+		patientDAO.create(patientEntity);
+	}
+
+}

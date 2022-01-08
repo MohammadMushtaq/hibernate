@@ -1,0 +1,5 @@
+package com.xworkz.city.dao;
+
+public interface CityDAO {
+
+}
