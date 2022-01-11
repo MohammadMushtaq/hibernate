@@ -9,10 +9,10 @@
     <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
     <fullyQualifiedTypeName name="com.xworkz.city.entity.CityEntity"/>
     <fullyQualifiedTypeName name="com.xworkz.country.entity.CountryEntity"/>
-    <fullyQualifiedTypeName name="com.xworkz.company.dao.CompanyImpl"/>
-    <fullyQualifiedTypeName name="com.xworkz.company.entity.CompanyEntity"/>
     <fullyQualifiedTypeName name="com.xworkz.patient.entity.PatientEntity"/>
     <fullyQualifiedTypeName name="com.xworkz.state.dao.StateDAO"/>
     <fullyQualifiedTypeName name="com.xworkz.state.entity.StateEntity"/>
+    <fullyQualifiedTypeName name="com.xworkz.company.entity.CompanyEntity"/>
     <fullyQualifiedTypeName name="com.xworkz.company.dao.CompanyDAO"/>
+    <fullyQualifiedTypeName name="com.xworkz.company.dao.CompanyImpl"/>
 </qualifiedTypeNameHistroy>
