@@ -1,0 +1,36 @@
+package com.xworkz.tour;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.xworkz.tour.dao.MedicineDAO;
+import com.xworkz.tour.dao.MedicineDAOImpl;
+import com.xworkz.tour.entity.MedicineEntity;
+
+public class MedicineScanner {
+
+	public static void main(String[] args) {
+
+		MedicineEntity medicineEntity1= new MedicineEntity(1,"paracetumol500","fever","paracetumol",true);
+		MedicineEntity medicineEntity2= new MedicineEntity(2,"dolo650","fever","paracetumol",true);
+		MedicineEntity medicineEntity3= new MedicineEntity(3,"citrizen","cold","paracetumol",false);
+		MedicineEntity medicineEntity4= new MedicineEntity(4,"vicsaction500","caugh","visc",true);
+		MedicineEntity medicineEntity5= new MedicineEntity(5,"aten500","sugar","paracetumol",false);
+		MedicineEntity medicineEntity6=new MedicineEntity(6, "pentozol", "gas", "corona", true);
+		MedicineEntity medicineEntity8=new MedicineEntity(8, "aten50", "bp", "para", true);
+
+		List<MedicineEntity> list= new ArrayList<MedicineEntity>();
+	//	list.add(medicineEntity1);
+	//	list.add(medicineEntity2);
+		list.add(medicineEntity3);
+		list.add(medicineEntity4);
+		list.add(medicineEntity5);
+		list.add(medicineEntity6);
+		list.add(medicineEntity8);
+			
+		MedicineDAO dao= new MedicineDAOImpl();
+	//	dao.save(medicineEntity2);		
+		
+		dao.saveAll(list);
+	}
+}

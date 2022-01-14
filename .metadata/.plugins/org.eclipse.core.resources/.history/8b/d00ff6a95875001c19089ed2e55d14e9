@@ -1,0 +1,13 @@
+package com.xworkz.tour.dao;
+
+import java.util.List;
+
+import com.xworkz.tour.entity.AirportEntity;
+
+public interface AirportDAO {
+	
+	void save (AirportEntity airportEntity);
+	
+	void save(List<AirportEntity> saveAll);
+
+}

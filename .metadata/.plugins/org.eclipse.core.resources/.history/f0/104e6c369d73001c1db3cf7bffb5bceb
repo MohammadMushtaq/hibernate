@@ -1,0 +1,22 @@
+package com.xworkz.tour;
+
+import javax.persistence.EntityManagerFactory;
+
+import javax.persistence.Persistence;
+
+import com.xworkz.tour.dao.TouristPlaceDAO;
+import com.xworkz.tour.dao.TouristPlaceDAOImpl;
+import com.xworkz.tour.entity.TouristPlaceEntity;
+
+public class TouristScanner {
+
+	public static void main(String[] args) {
+		
+		TouristPlaceEntity entity= new TouristPlaceEntity(1, "tajmahal", "agra", 1500d, "peta", "winter");
+	
+			TouristPlaceDAO tour= new	TouristPlaceDAOImpl();
+			
+			tour.save(entity);
+	}
+
+}

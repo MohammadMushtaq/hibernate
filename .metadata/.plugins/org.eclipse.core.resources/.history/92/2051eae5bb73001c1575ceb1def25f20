@@ -1,0 +1,17 @@
+package com.xworkz.tour;
+
+import com.xworkz.tour.dao.FactoryDAOImpl;
+import com.xworkz.tour.util.FactoryEntity;
+
+public class FactoryScanner {
+
+	public static void main(String[] args) {
+
+		FactoryEntity factoryEntity= new FactoryEntity(1,"tata","car manufacture","mumbai",4500,true);
+		FactoryDAOImpl factoryDAOImpl= new FactoryDAOImpl();
+		factoryDAOImpl.save(factoryEntity);
+		
+
+	}
+
+}

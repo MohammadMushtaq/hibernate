@@ -1,0 +1,77 @@
+package com.xworkz.tour;
+
+import javax.persistence.EntityManagerFactory;
+
+import javax.persistence.Persistence;
+
+import com.xworkz.tour.dao.TouristPlaceDAO;
+import com.xworkz.tour.dao.TouristPlaceDAOImpl;
+import com.xworkz.tour.entity.TouristPlaceEntity;
+
+public class TouristScanner {
+
+	public static void main(String[] args) {
+		
+		TouristPlaceEntity entity1= new TouristPlaceEntity(2, "bangalore", "nandihills", 1120d, "dosa", "summer");
+		TouristPlaceEntity entity2= new TouristPlaceEntity(3, "statue of unity", "gujrat", 1200d, "fafda", "ranny");
+		TouristPlaceEntity entity3= new TouristPlaceEntity(4, "vidha sabha", "delhi", 1100d, "kajukatli", "winter");
+		TouristPlaceEntity entity4= new TouristPlaceEntity(5, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity5= new TouristPlaceEntity(6, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity6= new TouristPlaceEntity(7, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity7= new TouristPlaceEntity(8, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity8= new TouristPlaceEntity(9, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity9= new TouristPlaceEntity(10, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity10= new TouristPlaceEntity(11, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity11= new TouristPlaceEntity(12, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity12= new TouristPlaceEntity(13, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity13= new TouristPlaceEntity(14, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity14= new TouristPlaceEntity(15, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity15= new TouristPlaceEntity(16, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity16= new TouristPlaceEntity(17, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity17= new TouristPlaceEntity(18, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity18= new TouristPlaceEntity(19, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity19= new TouristPlaceEntity(20, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity20= new TouristPlaceEntity(21, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity21= new TouristPlaceEntity(22, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity22= new TouristPlaceEntity(23, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity23= new TouristPlaceEntity(24, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity24= new TouristPlaceEntity(25, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity25= new TouristPlaceEntity(26, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity26= new TouristPlaceEntity(27, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity27= new TouristPlaceEntity(28, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity28= new TouristPlaceEntity(29, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity29= new TouristPlaceEntity(30, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity30= new TouristPlaceEntity(31, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity31= new TouristPlaceEntity(32, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity32= new TouristPlaceEntity(33, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity33= new TouristPlaceEntity(33, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity34= new TouristPlaceEntity(34, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity35= new TouristPlaceEntity(35, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity36= new TouristPlaceEntity(36, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity37= new TouristPlaceEntity(37, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity38= new TouristPlaceEntity(38, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity39= new TouristPlaceEntity(39, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity40= new TouristPlaceEntity(40, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity41= new TouristPlaceEntity(41, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity42= new TouristPlaceEntity(42, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity43= new TouristPlaceEntity(43, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity44= new TouristPlaceEntity(44, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity45= new TouristPlaceEntity(45, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity46= new TouristPlaceEntity(46, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity47= new TouristPlaceEntity(47, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity48= new TouristPlaceEntity(48, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity49= new TouristPlaceEntity(49, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity50= new TouristPlaceEntity(50, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity51= new TouristPlaceEntity(51, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity52= new TouristPlaceEntity(52, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity53= new TouristPlaceEntity(53, "karla", "temple", 1220d, "puttu", "spring");
+		TouristPlaceEntity entity54= new TouristPlaceEntity(54, "tajmahal", "agra", 1500d, "peta", "winter");
+		
+			TouristPlaceDAO tour= new	TouristPlaceDAOImpl();
+			
+			
+			
+			
+	}
+
+}

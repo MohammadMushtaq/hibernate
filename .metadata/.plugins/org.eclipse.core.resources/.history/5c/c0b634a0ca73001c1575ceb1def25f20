@@ -1,0 +1,32 @@
+package com.xworkz.tour.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table
+public class MedicineEntity {
+	
+	@Id
+	@Column (name="m_id")
+	private int id;
+	@Column (name="m_name")
+	private String name;
+	@Column (name="m_type")
+	private String type;
+	@Column (name="m_brand")
+	private String brand;
+	@Column (name="m_available")
+	private boolean available;
+	
+	
+	`m_id` INT NOT NULL,
+	  `m_name` VARCHAR(45) NULL,
+	  `m_type` VARCHAR(45) NULL,
+	  `m_brand` VARCHAR(45) NULL,
+	  `m_available` TINYINT NULL,
+	  PRIMARY KEY (`m_id`));
+
+}

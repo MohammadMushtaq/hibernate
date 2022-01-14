@@ -20,6 +20,10 @@ public class BiscuitScanner {
 	dao.save(biscuitEntity3);
 	dao.save(biscuitEntity4);
 	dao.save(biscuitEntity5);
+	
+
 	}
+	
+	
 
 }

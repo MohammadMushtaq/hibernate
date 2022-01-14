@@ -1,0 +1,27 @@
+package com.xworkz.tour.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table (name="")
+public class AirportEntity {	
+		@Id
+		@Column (name="a_id")
+		private int id;
+		@Column (name="a_name")
+		private String name;
+		@Column (name="a_type")
+		private String type;
+		@Column (name="a_location")
+		private String location;
+		@Column (name="a_source")
+		private int noOfEmployee;
+		@Column (name="a_destination")
+		private String destination;
+		@Column (name="a_active")
+		private boolean active;
+
+}

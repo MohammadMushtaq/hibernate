@@ -1,0 +1,50 @@
+package com.xworkz.tour.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+public class BiscuitEntity {
+	
+	@Entity
+	@Table (name="biscuit_details")
+	public class FactoryEntity {
+		@Id
+		@Column (name="b_id")
+		private int id;
+		@Column (name="b_name")
+		private String name;
+		@Column (name="b_type")
+		private String type;
+		@Column (name="b_available")
+		private String available;
+		@Column (name="b_price")
+		private int price;
+		@Column (name="b_brand")
+		private String active;
+		
+		public FactoryEntity() {
+			// TODO Auto-generated constructor stub
+		}
+
+		public FactoryEntity(int id, String name, String type, String available, int price, String active) {
+			super();
+			this.id = id;
+			this.name = name;
+			this.type = type;
+			this.available = available;
+			this.price = price;
+			this.active = active;
+		}
+
+		@Override
+		public String toString() {
+			return "FactoryEntity [id=" + id + ", name=" + name + ", type=" + type + ", available=" + available
+					+ ", price=" + price + ", active=" + active + "]";
+		}
+		
+
+}
+
+}

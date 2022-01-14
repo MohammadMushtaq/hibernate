@@ -17,8 +17,6 @@
     <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
     <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
     <fullyQualifiedTypeName name="org.hibernate.event.internal.EventUtil"/>
-    <fullyQualifiedTypeName name="javax.transaction.Transaction"/>
-    <fullyQualifiedTypeName name="com.xworkz.tour.entity.TouristPlaceEntity"/>
     <fullyQualifiedTypeName name="com.xworkz.tour.dao.TouristPlaceDAOImpl"/>
     <fullyQualifiedTypeName name="com.xworkz.tour.dao.TouristPlaceDAO"/>
     <fullyQualifiedTypeName name="com.sun.xml.fastinfoset.util.FixedEntryStringIntMap"/>
@@ -27,12 +25,10 @@
     <fullyQualifiedTypeName name="com.xworkz.tour.dao.SilkDAOImp"/>
     <fullyQualifiedTypeName name="com.xworkz.tour.dao.FactoryDAO"/>
     <fullyQualifiedTypeName name="com.xworkz.tour.util.EntityUtil"/>
-    <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
     <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
     <fullyQualifiedTypeName name="javax.persistence.EntityTransaction"/>
     <fullyQualifiedTypeName name="com.xworkz.tour.util.FactoryEntity"/>
     <fullyQualifiedTypeName name="com.xworkz.tour.dao.FactoryDAOImpl"/>
-    <fullyQualifiedTypeName name="com.xworkz.tour.entity.RailwayEntity"/>
     <fullyQualifiedTypeName name="com.xworkz.tour.dao.RailwayStationDAO"/>
     <fullyQualifiedTypeName name="com.xworkz.tour.dao.RailwayDAOImpl"/>
     <fullyQualifiedTypeName name="com.xworkz.tour.entity.SugercaneEntity"/>
@@ -42,7 +38,6 @@
     <fullyQualifiedTypeName name="javax.persistence.Column"/>
     <fullyQualifiedTypeName name="javax.persistence.Entity"/>
     <fullyQualifiedTypeName name="javax.persistence.Table"/>
-    <fullyQualifiedTypeName name="com.xworkz.tour.entity.MedicineEntity"/>
     <fullyQualifiedTypeName name="com.xworkz.tour.dao.MedicineDAO"/>
     <fullyQualifiedTypeName name="com.xworkz.tour.dao.MedicineDAOImpl"/>
     <fullyQualifiedTypeName name="com.xworkz.tour.entity.AirportEntity"/>
@@ -51,4 +46,12 @@
     <fullyQualifiedTypeName name="com.xworkz.tour.entity.BiscuitEntity"/>
     <fullyQualifiedTypeName name="com.xworkz.tour.dao.BiscuitDAO"/>
     <fullyQualifiedTypeName name="com.xworkz.tour.dao.BiscuitDAOImpl"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
+    <fullyQualifiedTypeName name="javax.persistence.PersistenceException"/>
+    <fullyQualifiedTypeName name="javax.transaction.Transaction"/>
+    <fullyQualifiedTypeName name="com.xworkz.tour.entity.TouristPlaceEntity"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.xworkz.tour.entity.MedicineEntity"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.xworkz.tour.entity.RailwayEntity"/>
 </qualifiedTypeNameHistroy>

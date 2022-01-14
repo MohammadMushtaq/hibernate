@@ -1,0 +1,15 @@
+package com.xworkz.tour;
+
+import com.xworkz.tour.entity.AirportEntity;
+
+public class AirportSacnner {
+
+	public static void main(String[] args) {
+		AirportEntity airportEntity= new AirportEntity(1,"chatrapati","international","mumbai",
+				"mumbai","usa",true);
+		
+		
+
+	}
+
+}

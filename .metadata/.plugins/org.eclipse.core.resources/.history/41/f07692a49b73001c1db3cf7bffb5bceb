@@ -1,0 +1,19 @@
+package com.xworkz.tour;
+
+import com.xworkz.tour.dao.SilkDAO;
+import com.xworkz.tour.dao.SilkDAOImp;
+import com.xworkz.tour.entity.SilkManufactureEntity;
+
+public class SilkScanner {
+
+	public static void main(String[] args) {
+		
+		SilkManufactureEntity silkManufactureEntity = 
+				new SilkManufactureEntity(1,"abc","bangalore","silk",250,5500000d,"15");
+		SilkDAO silkDAO= new SilkDAOImp();
+		silkDAO.save(silkManufactureEntity);
+		
+
+	}
+
+}
