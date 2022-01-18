@@ -11,7 +11,6 @@ import javax.persistence.PersistenceException;
 import javax.transaction.Transaction;
 
 import com.xworkz.tour.entity.MedicineEntity;
-import com.xworkz.tour.entity.WebSiteEntity;
 import com.xworkz.tour.util.EntityUtil;
 
 public class MedicineDAOImpl implements MedicineDAO {
@@ -35,29 +34,27 @@ public class MedicineDAOImpl implements MedicineDAO {
 		EntityTransaction transaction = manager.getTransaction();
 		transaction.begin();
 		try {
-			int flushcount=0;  
-		
-		for (MedicineEntity entity : medicineEntities) {
-			
-			manager.persist(entity);
-			
-			if (flushcount >= 10) {	//1>>2>>3
-				manager.flush();
-				System.out.println("flushing the data");
-				flushcount=0;
+			int flushcount =0;
+			for (int i = 0; i < 10; i++) {
 				
-				manager.clear();
-				System.out.println("clear the data");
+					for (MedicineEntity medicineEntity : medicineEntities) {
+						
+						manager.persist(medicineEntity);
+						manager.flush();
+						if (flushcount == 10) {
+						manager.clear();
+						
+						flushcount++;
+						
+					}
 				}
-			flushcount++;
 			}
-		transaction.commit();
-		}
-			catch (PersistenceException e) {
+		} catch (PersistenceException e) {
+
 			transaction.rollback();
-			}
-		
-	
+		}	
+		transaction.commit();
+
 	}
 
 }

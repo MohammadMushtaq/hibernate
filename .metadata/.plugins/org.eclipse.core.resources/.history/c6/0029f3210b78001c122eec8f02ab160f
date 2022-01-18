@@ -44,32 +44,32 @@ public class TouristPlaceDAOImpl implements TouristPlaceDAO{
 
 	@Override
 	public void saveAll(List<TouristPlaceEntity> SaveTour) {
-		EntityManagerFactory entityManagerFactory = EntityUtil.getEntityManagerFactory();
-
-		EntityManager manager = entityManagerFactory.createEntityManager();
-		EntityTransaction transaction = manager.getTransaction();
-		transaction.begin();
-		try {
-			int flushcount=0;  
 		
-		for (TouristPlaceEntity touristPlaceEntity : SaveTour) {
 			
-			manager.persist(touristPlaceEntity);
-			
-			if (flushcount >= 10) {	//1>>2>>3
-				manager.flush();
-				System.out.println("flushing the data");
-				flushcount=0;
-				
-				manager.clear();
-				System.out.println("clear the data");
+			EntityManagerFactory entityManagerFactory = EntityUtil.getEntityManagerFactory();
+
+			EntityManager manager = entityManagerFactory.createEntityManager();
+			EntityTransaction transaction = manager.getTransaction();
+			transaction.begin();
+			try {
+				int flushcount =0;
+				for (int i = 0; i < 10; i++) {
+					
+						for (TouristPlaceEntity touristPlaceEntity : SaveTour) {
+							
+							manager.persist(touristPlaceEntity);
+							manager.flush();
+							if (flushcount == 10) {
+							manager.clear();			
+							flushcount++;
+							
+						}
+					}
 				}
-			flushcount++;
-			}
-		transaction.commit();
+			} catch (PersistenceException e) {
+
+				transaction.rollback();
+			}	
+			transaction.commit();
 		}
-			catch (PersistenceException e) {
-			transaction.rollback();
-			}
-	}
 }
