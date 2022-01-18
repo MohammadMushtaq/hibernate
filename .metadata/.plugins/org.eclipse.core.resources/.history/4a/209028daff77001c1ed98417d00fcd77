@@ -1,0 +1,43 @@
+package com.xworkz.tour;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.xworkz.tour.dao.WebSiteDAOImpl;
+import com.xworkz.tour.dao.WebsiteDAO;
+import com.xworkz.tour.entity.WebSiteEntity;
+
+public class WebSiteTester {
+
+	public static void main(String[] args) {
+		
+		List<WebSiteEntity> list= new ArrayList<WebSiteEntity>();
+		list.add(new WebSiteEntity("google", "software","larry page", 1945, "www.google.com")); 
+		list.add(new WebSiteEntity("facebook", "socail networking ", "mark zukerberg", 2010, "www.facebook.com"));
+		list.add(new WebSiteEntity("blogger", "content manager", "Evan Williams", 1999, "www.blogger.com"));
+		list.add(new WebSiteEntity("youtube", "Entertainment", "san matio", 2005, "www.youtube.com"));
+		list.add(new WebSiteEntity("whatsapp", "socail site", "Jan Koum", 2014, "wwww.whatsapp.com"));
+		list.add(new WebSiteEntity("apple", "electronic", "steve jobs",1976, "wwww.apple.com"));
+		list.add(new WebSiteEntity("microsoft", "e-commerece","bill gates", 1995, "www.microsoft.com"));
+		list.add(new WebSiteEntity("adobe", "software", "Charles Geschke",1982 , "www.adobe.com"));
+		list.add(new WebSiteEntity("imdb", "internet movie database", "Col Needham",1998, "www.imdb.com"));
+		list.add(new WebSiteEntity("bbc","News broadCasting", "HM Government", 1992, "www.bbc.com"));
+		list.add(new WebSiteEntity(null, null, null, 0, null));
+		list.add(new WebSiteEntity(null, null, null, 0, null));
+		list.add(new WebSiteEntity(null, null, null, 0, null));
+		list.add(new WebSiteEntity(null, null, null, 0, null));
+		list.add(new WebSiteEntity(null, null, null, 0, null));
+		list.add(new WebSiteEntity(null, null, null, 0, null));
+		list.add(new WebSiteEntity(null, null, null, 0, null));
+		list.add(new WebSiteEntity(null, null, null, 0, null));
+		list.add(new WebSiteEntity(null, null, null, 0, null));
+		list.add(new WebSiteEntity(null, null, null, 0, null));
+		list.add(new WebSiteEntity(null, null, null, 0, null));
+		list.add(new WebSiteEntity(null, null, null, 0, null));
+		list.add(new WebSiteEntity(null, null, null, 0, null));
+		list.add(new WebSiteEntity(null, null, null, 0, null));
+		WebsiteDAO websiteDAO= new WebSiteDAOImpl();
+		websiteDAO.save(list);
+	}
+
+}

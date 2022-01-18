@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;WebSiteEntity.java&apos; to &apos;tourist_project/src/com.xworkz.tour.entity&apos;&#x0D;&#x0A;- Original project: &apos;tourist_project&apos;&#x0D;&#x0A;- Destination element: &apos;tourist_project/src/com.xworkz.tour.entity&apos;&#x0D;&#x0A;- Original element: &apos;com.xworkz.tour.util.WebSiteEntity.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.xworkz.tour.entity" element1="/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.xworkz.tour.util{WebSiteEntity.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1642405663549" units="1" version="1.0"/>
+</session>

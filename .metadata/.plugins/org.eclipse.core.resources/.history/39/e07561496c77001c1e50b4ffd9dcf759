@@ -1,0 +1,34 @@
+package com.xworkz.tour.dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+
+import com.xworkz.tour.entity.RailwayEntity;
+import com.xworkz.tour.entity.WebSiteEntity;
+
+
+public class WebSiteDAOImpl implements WebsiteDAO{
+
+	@Override
+	public void save(List<WebSiteEntity> webSiteEntity) {
+		EntityManagerFactory entityManagerFactory = EntityUtil.getEntityManagerFactory();
+
+		EntityManager manager = entityManagerFactory.createEntityManager();
+		EntityTransaction transaction = manager.getTransaction();
+		transaction.begin();
+		
+		for (WebSiteEntity railwayEntity : webSiteEntity) {
+			
+			manager.persist(railwayEntity);
+			manager.flush();
+			if (flushcount == 10) {
+			manager.clear();			
+			flushcount++;
+		
+	}
+		}
+	
+}

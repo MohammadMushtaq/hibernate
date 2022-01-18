@@ -1,0 +1,126 @@
+package com.xworkz.tour.entity;
+
+public class WebSiteEntity {
+
+	private int id;
+	private String name;
+	private String domain;
+	private String owner;
+	private int since;
+	private String url;
+	
+	
+	public WebSiteEntity() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public WebSiteEntity(int id, String name, String domain, String owner, int since, String url) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.domain = domain;
+		this.owner = owner;
+		this.since = since;
+		this.url = url;
+	}
+
+
+	@Override
+	public String toString() {
+		return "WebSiteEntity [id=" + id + ", name=" + name + ", domain=" + domain + ", owner=" + owner + ", since="
+				+ since + ", url=" + url + "]";
+	}
+
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + id;
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		return result;
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		WebSiteEntity other = (WebSiteEntity) obj;
+		if (id != other.id)
+			return false;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
+		return true;
+	}
+
+
+	public int getId() {
+		return id;
+	}
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public String getDomain() {
+		return domain;
+	}
+
+
+	public void setDomain(String domain) {
+		this.domain = domain;
+	}
+
+
+	public String getOwner() {
+		return owner;
+	}
+
+
+	public void setOwner(String owner) {
+		this.owner = owner;
+	}
+
+
+	public int getSince() {
+		return since;
+	}
+
+
+	public void setSince(int since) {
+		this.since = since;
+	}
+
+
+	public String getUrl() {
+		return url;
+	}
+
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+	
+	
+}

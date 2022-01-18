@@ -1,0 +1,21 @@
+package com.xworkz.tour;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.xworkz.tour.dao.WebSiteDAOImpl;
+import com.xworkz.tour.dao.WebsiteDAO;
+import com.xworkz.tour.entity.WebSiteEntity;
+
+public class WebSiteTester {
+
+	public static void main(String[] args) {
+		
+		List<WebSiteEntity> list= new ArrayList<WebSiteEntity>();
+		list.add(new WebSiteEntity("google", "software","larry page", 1945, "www.google.com")); 
+		
+		WebsiteDAO websiteDAO= new WebSiteDAOImpl();
+		websiteDAO.save(list);
+	}
+
+}
