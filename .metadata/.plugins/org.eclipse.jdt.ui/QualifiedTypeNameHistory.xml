@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.hibernate.Session"/>
-    <fullyQualifiedTypeName name="org.hibernate.annotations.Entity"/>
-    <fullyQualifiedTypeName name="org.w3c.dom.Entity"/>
-    <fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
-    <fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
     <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
     <fullyQualifiedTypeName name="com.xworkz.city.entity.CityEntity"/>
     <fullyQualifiedTypeName name="com.xworkz.country.entity.CountryEntity"/>
@@ -24,7 +19,6 @@
     <fullyQualifiedTypeName name="com.xworkz.tour.dao.SilkDAO"/>
     <fullyQualifiedTypeName name="com.xworkz.tour.dao.SilkDAOImp"/>
     <fullyQualifiedTypeName name="com.xworkz.tour.dao.FactoryDAO"/>
-    <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
     <fullyQualifiedTypeName name="javax.persistence.EntityTransaction"/>
     <fullyQualifiedTypeName name="com.xworkz.tour.util.FactoryEntity"/>
     <fullyQualifiedTypeName name="com.xworkz.tour.dao.FactoryDAOImpl"/>
@@ -49,14 +43,21 @@
     <fullyQualifiedTypeName name="javax.persistence.Entity"/>
     <fullyQualifiedTypeName name="javax.persistence.Table"/>
     <fullyQualifiedTypeName name="javax.persistence.Column"/>
-    <fullyQualifiedTypeName name="com.xworkz.tour.util.EntityUtil"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="javax.persistence.Id"/>
     <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
     <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
-    <fullyQualifiedTypeName name="com.xworkz.tour.dao.WebsiteDAO"/>
     <fullyQualifiedTypeName name="com.xworkz.tour.dao.WebSiteDAOImpl"/>
-    <fullyQualifiedTypeName name="com.xworkz.tour.entity.WebSiteEntity"/>
+    <fullyQualifiedTypeName name="com.xworkz.tour.dao.WebsiteDAO"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+    <fullyQualifiedTypeName name="com.xworkz.tour.util.EntityUtil"/>
     <fullyQualifiedTypeName name="javax.persistence.PersistenceException"/>
+    <fullyQualifiedTypeName name="javax.persistence.Query"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="javax.persistence.NamedNativeQuery"/>
+    <fullyQualifiedTypeName name="org.hibernate.annotations.NamedQuery"/>
+    <fullyQualifiedTypeName name="javax.persistence.NamedQueries"/>
+    <fullyQualifiedTypeName name="com.xworkz.tour.entity.WebSiteEntity"/>
+    <fullyQualifiedTypeName name="javax.persistence.NamedQuery"/>
 </qualifiedTypeNameHistroy>

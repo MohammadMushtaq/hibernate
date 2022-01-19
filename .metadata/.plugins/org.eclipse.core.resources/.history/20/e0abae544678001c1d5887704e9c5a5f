@@ -1,0 +1,15 @@
+package com.xworkz.tour;
+
+import com.xworkz.tour.dao.WebSiteDAOImpl;
+import com.xworkz.tour.dao.WebsiteDAO;
+import com.xworkz.tour.entity.WebSiteEntity;
+
+public class webSiteQueryScan {
+
+	public static void main(String[] args) {
+		WebsiteDAO websiteDAO= new WebSiteDAOImpl();
+		WebSiteEntity entity= websiteDAO.getByNameGoogle();
+		System.out.println(entity);
+	}
+
+}

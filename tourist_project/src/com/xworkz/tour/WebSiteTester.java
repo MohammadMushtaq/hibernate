@@ -37,7 +37,7 @@ public class WebSiteTester {
 		list.add(new WebSiteEntity("skype", "software", "Niklas Zennstrom", 2003, "www.skype.com"));
 		list.add(new WebSiteEntity("disney", "entertainment", "walt disney", 1923, "www.disney.com"));
 		WebsiteDAO websiteDAO= new WebSiteDAOImpl();
-		websiteDAO.save(list);
-	}
+//		websiteDAO.save(list);
+		}
 
 }
